@@ -5,31 +5,35 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
+/**
+ * Represents the Revenue Calculator Page and its interactions.
+ */
+
 public class RevenueCalculatorPage extends BasePage{
 	
 	protected WebDriver driver;
-	
+	//Locators for various elements on the Revenue Calculator Page
 	private By scrollViewElement = By.xpath("//h4[contains(text(), 'Medicare Eligible Patients')]");
 	private By textfield = By.xpath("//input[@type='number']");
-	private By scrollElement = By.xpath("//div[@class='MuiBox-root css-j7qwjs']/span/span[3]");
+	private By scrollElement = By.xpath("//input[@type='range']/parent::span");
 	private By scrollElementInput = By.xpath("//input[@type='range']");
-	private By totalRecurringReimbursement = By.xpath("(//p[contains(@class, 'css-1bl0tdj')])[4]");
+	private By totalRecurringReimbursement = By.xpath("//p[contains(text(), 'Total Recurring Reimbursement for all Patients Per Month:')]/p");
 	private By inspectEle = By.xpath("//p[contains(text(), 'FitPeo Inc')]");
 	
 	
-	
+	//Constructor to initialize the Revenue Calculator Page.
 	public RevenueCalculatorPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}
 
-	
+	//Scrolls to the slider section on the Revenue Calculator Page.
 	public void scrollToVisibleSlider() {
 		scrollToElement(scrollViewElement);
 	}
 	
 	
-	
+	//Adjusts the slider to the specified value.
 	public void moveTheSlider(String scrollValue) {
 		
 		Actions actions = new Actions(driver);
@@ -43,24 +47,24 @@ public class RevenueCalculatorPage extends BasePage{
 	}
 	
 	
-	
+	//Updates the text field with the specified value.
 	public void updateTheTextFeild(String textfieldValue) {
-		int currentScrollValue = Integer.parseInt(getAttributeValue(scrollElementInput,"value"));
+		String currentScrollValue = getAttributeValue(scrollElementInput,"value");
 		
-		for(int i=0; i<currentScrollValue; i++) {
+		//Clear the current value in the text field
+		for(int i=0; i<currentScrollValue.length(); i++) {
 			enterValue(textfield, Keys.BACK_SPACE);
 		}
 		
+		// Enter the new value in the text field
 		for (char digit : textfieldValue.toCharArray()) {
 			enterValue(textfield, String.valueOf(digit));
 	    }
 
-
-
 	}
 
 
-
+	//Selects the specified CPT codes by checking their corresponding checkboxes.
 	public void selectCPTCodes(String[] codes) {
 	    for (String code : codes) {
 	        By checkboxLocator = By.xpath("//p[text()='" + code + "']/following-sibling::label//input[@type='checkbox']");
@@ -73,18 +77,21 @@ public class RevenueCalculatorPage extends BasePage{
 	}
 
 
-
+	//Retrieves the current value of the slider.
 	public String getSliderValue() {
 		return getAttributeValue(scrollElementInput,"value");
 	}
 	
+	
+	//Retrieves the total recurring reimbursement value displayed on the page.
 	public String getTotalReimbursement() {
 		waitForElementToBeVisible(inspectEle);
 		scrollToElement(inspectEle);
 		return getElementText(totalRecurringReimbursement);
 	}
+	
 
-
+	//Checks if the Revenue Calculator Page is fully loaded.
 	public boolean isPageLoaded() {
 		try {
             

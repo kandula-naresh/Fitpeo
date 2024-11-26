@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-26T11:23:04 IST" name="Default suite" finished-at="2024-11-26T11:24:36 IST" duration-ms="92212">
+  <suite started-at="2024-11-26T20:12:48 IST" name="Default suite" finished-at="2024-11-26T20:13:24 IST" duration-ms="36025">
     <groups>
     </groups>
-    <test started-at="2024-11-26T11:23:04 IST" name="Default test" finished-at="2024-11-26T11:24:36 IST" duration-ms="92212">
+    <test started-at="2024-11-26T20:12:48 IST" name="Default test" finished-at="2024-11-26T20:13:24 IST" duration-ms="36025">
       <class name="com.fitpeo.Tests.RevenueCalculatorTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T11:23:04 IST" name="setUp" finished-at="2024-11-26T11:23:14 IST" duration-ms="9359" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T20:12:48 IST" name="setUp" finished-at="2024-11-26T20:12:53 IST" duration-ms="5399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testNavigateToRevenueCalculatorPage()[pri:1, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T11:23:14 IST" name="testNavigateToRevenueCalculatorPage" finished-at="2024-11-26T11:23:15 IST" duration-ms="1217" status="PASS">
+        <test-method signature="testNavigateToRevenueCalculatorPage()[pri:1, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T20:12:53 IST" name="testNavigateToRevenueCalculatorPage" finished-at="2024-11-26T20:12:54 IST" duration-ms="1328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigateToRevenueCalculatorPage -->
-        <test-method signature="testSliderAdjustmentTo820()[pri:2, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T11:23:15 IST" name="testSliderAdjustmentTo820" finished-at="2024-11-26T11:23:33 IST" duration-ms="17727" status="PASS">
+        <test-method signature="testSliderAdjustmentTo820()[pri:2, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T20:12:54 IST" name="testSliderAdjustmentTo820" finished-at="2024-11-26T20:13:14 IST" duration-ms="19240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSliderAdjustmentTo820 -->
-        <test-method signature="testValidateSliderValueAfterTextUpdate()[pri:3, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T11:23:33 IST" name="testValidateSliderValueAfterTextUpdate" finished-at="2024-11-26T11:24:27 IST" duration-ms="54767" status="PASS">
+        <test-method signature="testValidateSliderValueAfterTextUpdate()[pri:3, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T20:13:14 IST" name="testValidateSliderValueAfterTextUpdate" finished-at="2024-11-26T20:13:14 IST" duration-ms="787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateSliderValueAfterTextUpdate -->
-        <test-method signature="testSelectCPTCodes()[pri:4, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T11:24:27 IST" name="testSelectCPTCodes" finished-at="2024-11-26T11:24:36 IST" duration-ms="8669" status="PASS">
+        <test-method signature="testSelectCPTCodes()[pri:4, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T20:13:14 IST" name="testSelectCPTCodes" finished-at="2024-11-26T20:13:23 IST" duration-ms="8833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectCPTCodes -->
-        <test-method signature="testValidateTotalRecurringReimbursement()[pri:5, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T11:24:36 IST" name="testValidateTotalRecurringReimbursement" finished-at="2024-11-26T11:24:36 IST" duration-ms="115" status="PASS">
+        <test-method signature="testValidateTotalRecurringReimbursement()[pri:5, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T20:13:23 IST" name="testValidateTotalRecurringReimbursement" finished-at="2024-11-26T20:13:23 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateTotalRecurringReimbursement -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T11:24:36 IST" name="tearDown" finished-at="2024-11-26T11:24:36 IST" duration-ms="279" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fitpeo.Tests.RevenueCalculatorTest@43bc63a3]" started-at="2024-11-26T20:13:23 IST" name="tearDown" finished-at="2024-11-26T20:13:24 IST" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
