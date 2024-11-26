@@ -2,13 +2,13 @@ How to Set Up and Run the Automation Script
 
 1. Prerequisites
 Follow these steps to set up and execute the automated test for the FitPeo website using Selenium WebDriver, TestNG, and Page Object Model (POM) design pattern. Ensure the following tools and software are installed on your system:
-1.	Java Development Kit (JDK):
-•	Install JDK 8 or higher.
-•	Verify installation by running:
--	java -version
--	javac -version
-2.	Eclipse IDE:
-•	Download and install Eclipse IDE.
+   1. Java Development Kit (JDK):
+	1. Install JDK 8 or higher.
+	2. Verify installation by running:
+		java -version
+		javac -version
+   2. Eclipse IDE:
+	1. Download and install Eclipse IDE.
 3.	WebDriverManager:
 •	The scripts use WebDriverManager to manage browser drivers dynamically. No manual setup is required.
 4.	TestNG Plugin for Eclipse:
@@ -30,48 +30,6 @@ git clone <repository-url>
 4.	Browse to the folder containing the unzipped project and click Finish.
 3.	Install Dependencies:
 •	If using Maven, ensure that all dependencies in pom.xml are installed. Like selenium, TestNG, WebDriverManager.
-•	For the reference see the pom.xml code:
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.fitpeo</groupId>
-  <artifactId>Fitpeo-Automation-Project</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-
-  <name>Fitpeo-Automation-Project</name>
-  <url>http://maven.apache.org</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <dependencies>
-  	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.26.0</version>
-</dependency>
-	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.10.2</version>
-    <scope>test</scope>
-</dependency>
-	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.9.2</version>
-</dependency>
-    
-  </dependencies>
-</project>
-
-
 
 3.	Test Execution:
 1.	Configure the Test URL:
