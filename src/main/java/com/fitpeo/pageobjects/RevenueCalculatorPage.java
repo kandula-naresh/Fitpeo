@@ -91,6 +91,7 @@ public class RevenueCalculatorPage extends BasePage{
 			waitForElementToBeVisible(scrollViewElement);
             return isDisplayed(scrollViewElement);
         } catch (Exception e) {
+        	System.err.println("Error while checking if the page is loaded: " + e.getMessage());
             return false;
         }
 	}

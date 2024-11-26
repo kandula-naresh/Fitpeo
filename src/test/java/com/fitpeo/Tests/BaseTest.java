@@ -15,17 +15,27 @@ public class BaseTest {
 	
 	@BeforeTest
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-        driver.get("https://fitpeo.com");
+        try {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            driver.manage().window().maximize();
+            driver.get("https://fitpeo.com");
+        } catch (Exception e) {
+            System.err.println("Error during WebDriver setup: " + e.getMessage());
+        }
     }
 	
 	
 	@AfterTest
-	 public void tearDown() {
-        driver.quit();
+    public void tearDown() {
+        try {
+            if (driver != null) {
+                driver.quit();
+            }
+        } catch (Exception e) {
+            System.err.println("Error during WebDriver teardown: " + e.getMessage());
+        }
     }
 
 }
