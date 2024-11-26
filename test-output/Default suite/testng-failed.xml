@@ -5,9 +5,9 @@
     <classes>
       <class name="com.fitpeo.Tests.RevenueCalculatorTest">
         <methods>
-          <include name="testRevenueCalculator"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="testValidateSliderValueAfterTextUpdate"/>
         </methods>
       </class> <!-- com.fitpeo.Tests.RevenueCalculatorTest -->
     </classes>
